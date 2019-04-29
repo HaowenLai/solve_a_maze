@@ -19,12 +19,13 @@ include_directories(
 #link_directories(./)
 
 #all source put here
-set(cAndDSrcList 
-    compAndDecomp.cpp)
+set(genMazeSrcList
+    src/maze.cpp
+    genMaze.cpp)
 
 
-add_executable(cAndD ${cAndDSrcList})
+add_executable(genMaze ${genMazeSrcList})
 
-target_link_libraries(cAndD ${OpenCV_LIBS} myLibz)
+target_link_libraries(genMaze ${OpenCV_LIBS})
 
 
